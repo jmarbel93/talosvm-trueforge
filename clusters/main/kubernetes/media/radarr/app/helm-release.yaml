@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: radarr
-      version: 26.3.8
+      version: 26.3.14
       sourceRef:
         kind: HelmRepository
         name: truecharts
@@ -43,10 +43,8 @@ spec:
       config:
         enabled: true
         type: persistentVolumeClaim
-        storageClass: "longhorn"        # <--- Usamos tu SC por defecto vista en la captura
         accessMode: ReadWriteOnce
         size: 5Gi
-        
       media:
         enabled: true
         existingClaim: media-nfs-pvc
