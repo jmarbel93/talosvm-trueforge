@@ -43,6 +43,7 @@ spec:
       config:
         enabled: true
         type: persistentVolumeClaim
+        storageClass: "longhorn"        # <--- Usamos tu SC por defecto vista en la captura
         accessMode: ReadWriteOnce
         size: 5Gi
       media:
