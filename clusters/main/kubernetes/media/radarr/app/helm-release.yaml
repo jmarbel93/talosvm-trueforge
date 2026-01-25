@@ -40,12 +40,6 @@ spec:
         hosts:
           - host: radarr.${DOMAIN_0}
     persistence:
-      config:
-        enabled: true
-        type: persistentVolumeClaim
-        storageClass: "longhorn"        # <--- Usamos tu SC por defecto vista en la captura
-        accessMode: ReadWriteOnce
-        size: 5Gi
       media:
         enabled: true
         existingClaim: media-nfs-pvc
